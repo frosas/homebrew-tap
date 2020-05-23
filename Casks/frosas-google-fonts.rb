@@ -7,6 +7,8 @@ cask 'frosas-google-fonts' do
   url 'https://github.com/google/fonts.git'
   sha256 :no_check
 
+  conflicts_with cask: "font-roboto-mono"
+
   # TODO How to search and install all the fonts within a dir?
   # Dir["apache/robotomono/*.ttf"].each do |file|
   #   font file
